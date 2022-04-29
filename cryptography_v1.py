@@ -37,14 +37,14 @@ response = input(menu)
 response = response.lower()
 while response not in {'e', 'd', 'x'}:
     response = input(menu)
-if response == 'e':
+if response == 'e':  # Encode
     message = input('Enter the message to be encoded\n> ')
     message = message.lower()
     key = input('Enter the numeric key\n> ')
     key = int(key)
     encoded = encode(message, key)
     print(encoded)
-elif response == 'd':
+elif response == 'd':  # Decode
     message = input('Enter the message to be decoded\n> ')
     message = message.lower()
     key = input('Enter the numeric key\n> ')
